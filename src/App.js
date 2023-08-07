@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import { Nav } from 'react-bootstrap';
 import './App.css';
+import RRoutes from './components/rroutes/RRoutes'
+import { useState } from 'react';
+
 
 function App() {
+  const [language, setLanguage] = useState(1);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<RRoutes language={language} setLanguage={setLanguage}/>
+<Nav language={language} setLanguage={setLanguage}/>
     </div>
   );
 }

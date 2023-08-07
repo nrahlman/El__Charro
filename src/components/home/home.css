@@ -1,0 +1,188 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+.navbar-link {
+  color: #fff; /* Set the color to white */
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #733f3f;
+}
+
+.navbar-link.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-link.active:hover {
+  background-color: #555;
+}
+
+.home {
+  background-image: url("../../assets/El Charro/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 150vh; /* Adjust as needed */
+}
+
+.navbar-logo-container {
+  width: 200px; /* Set the desired width of the circular container */
+  height: 200px; /* Set the desired height of the circular container */
+  border-radius: 50%; /* Make the container circular */
+  overflow: hidden; /* Hide any content that goes beyond the circular container */
+}
+
+.navbar-logo {
+  width: 100%; /* Make the logo fill the circular container */
+  height: 100%; /* Make the logo fill the circular container */
+  object-fit: cover; /* Scale and crop the logo to fit the container */
+}
+
+.button-styling {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #135d15;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-styling:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.button-styling:hover::after {
+  background-color: transparent;
+}
+.button-styling:not(.navbar-link):hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+
+
+
+.button-styling:active {
+  background-color: #3c893d;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.lorem-text {
+  margin-left: 80px;
+  width: 70%;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.lorem-text:hover {
+  background-color: #e0e0e0 !important;
+  transform: scale(1.1);
+  color: #135d15;;
+}
+
+
+.lorem-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1.2); /* Adjust the opacity as needed */
+  z-index: -1;
+}
+h1 {
+  color: white;
+}
+
+.order1 {
+  padding: 10px 30px; /* Adjust the padding as needed */
+  background-color: #135d15;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: fit-content; /* Set the height to fit the content */
+}
+h2 {
+  color: white;
+}
+
+.video{
+  margin-top: 100px;
+  width: 1000px;
+  height: 500px;
+}
+.title {
+  color: white;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.slides {
+  margin-top: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    grid-template-columns: none;
+    grid-template-rows: auto;
+  }
+  .navbar-logo-container {
+    width: 70px; /* Set the desired width of the circular container */
+    height: 70px; /* Set the desired height of the circular container */
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide any content that goes beyond the circular container */
+  }
+  .video{
+    margin-top: 100px;
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    grid-template-columns: none;
+    grid-template-rows: auto;
+  }
+  .navbar-logo-container {
+    width: 70px; /* Set the desired width of the circular container */
+    height: 70px; /* Set the desired height of the circular container */
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide any content that goes beyond the circular container */
+  }
+  .video{
+    margin-top: 100px;
+    width: 300px;
+    height: 150px;
+  }
+}
+
+
