@@ -1,0 +1,90 @@
+.menu-section {
+    background-color: #FEFFD1; /* Use a Mexican food color for the background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    width: calc(33.33% - 20px);
+  }
+  
+  .menu-section:last-child {
+    margin-right: 0;
+  }
+  
+  .menu-section h2 {
+    color: #FF6347; /* Use a Mexican food color for the h2 text */
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-section p {
+    color: #333; /* Regular text color */
+  }
+  
+  .menu-item {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  
+  .item-name {
+    color: #333; /* Regular text color */
+    font-weight: bold;
+  }
+  
+  .item-price {
+    color: #008000; /* Use a Mexican food color for the item price */
+    margin-left: 10px;
+  }
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("../../assets/El Charro/flag5.jpg");
+
+}  
+.order {
+  padding: 10px 30px; /* Adjust the padding as needed */
+  background-color: #135d15;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 400px;
+  height: fit-content; /* Set the height to fit the content */
+}
+
+.title{
+    color: #FFF979
+    ;
+}
+  
+@media screen and (max-width: 1024px) {
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+  }
+  .menu-section{
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 415px;
+  margin: 0 auto;
+}
+.menu-section{
+  width: 300px;
+}
+}

@@ -54,8 +54,15 @@ body {
   .nav-link.nav-button {
     font-size: 20px;
   }
+  .nav-bar {
+    flex-direction: column; /* Change flex direction to vertical */
+    padding: 10px; /* Reduce padding for better spacing */
+    display: flex;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+  }
 }
-
 /* Media query for screens smaller than 600px */
 @media screen and (max-width: 600px) {
  
@@ -63,8 +70,14 @@ body {
   .nav-bar {
     flex-direction: column; /* Change flex direction to vertical */
     padding: 10px; /* Reduce padding for better spacing */
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
   }
   .nav-link.nav-button {
     font-size: 20px;
   }
 }
+
+

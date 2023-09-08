@@ -45,4 +45,24 @@
   .hours{
     margin-top: 60px;
   }
+
+  @media screen and (max-width: 920px) {
+    .details-container {
+      display: flex;
+      flex-direction: column;
+    }
+ .location-image{
+  width: 600px;
+ }
+    }
+
+    @media screen and (max-width: 600px) {
+      .details-container {
+        display: flex;
+        flex-direction: column;
+      }
+   .location-image{
+    width: 350px;
+   }
+      }
   
