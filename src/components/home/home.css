@@ -4,15 +4,50 @@
   align-items: center;
   padding: 10px 20px;
 }
-p{
-  text-align: center;
-}
-.nav-link.nav-button{
-  font-size: 30px;
+.center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
 }
 
+.center-text {
+  text-align: center;
+  max-width: 1000px;
+}
+
+.lorem-text {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.phone{
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.take-out{
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.language {
+  font-size: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: white; 
+}
+
+
+
 .navbar-link {
-  color: #fff; /* Set the color to white */
+  color: #fff;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -34,24 +69,24 @@ p{
 }
 
 .home {
-  background-image: url("../../assets/El Charro/Backround.jpg");
+  background-image: url("../../assets/El Charro/background4.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 150vh; /* Adjust as needed */
+  min-height: 150vh; 
 }
 
 .navbar-logo-container {
-  width: 200px; /* Set the desired width of the circular container */
-  height: 200px; /* Set the desired height of the circular container */
-  border-radius: 50%; /* Make the container circular */
-  overflow: hidden; /* Hide any content that goes beyond the circular container */
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  overflow: hidden; 
 }
 
 .navbar-logo {
-  width: 100%; /* Make the logo fill the circular container */
-  height: 100%; /* Make the logo fill the circular container */
-  object-fit: cover; /* Scale and crop the logo to fit the container */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;  
 }
 
 .button-styling {
@@ -88,32 +123,20 @@ p{
   background-color: #3c893d;
 }
 
-.content {
-text-align: center;
-}
 
-.lorem-text {
+body .lorem-text {
   font-size: 40px;
-  color: #ffffff; /* Fallback color */
-  -webkit-text-stroke: 2px black; /* For Chrome and Safari */
-  text-stroke: 1px black; /* For Firefox */
-  text-align: center;
+  color: #ffffff;
+  text-align: center !important;
+  max-width: 1000px;
 }
 
-
-
-
-
-
-#left-column{
-  text-align: center;
-}
 h1 {
   color: white;
 }
 
 .order1 {
-  padding: 10px 30px; /* Adjust the padding as needed */
+  padding: 10px 30px; 
   background-color: #135d15;
   color: #fff;
   font-size: 16px;
@@ -123,7 +146,7 @@ h1 {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  height: fit-content; /* Set the height to fit the content */
+  height: fit-content; 
 }
 h2 {
   color: white;
@@ -153,18 +176,18 @@ h2 {
     grid-template-rows: auto;
   }
   .navbar-logo-container {
-    width: 70px; /* Set the desired width of the circular container */
-    height: 70px; /* Set the desired height of the circular container */
-    border-radius: 50%; /* Make the container circular */
-    overflow: hidden; /* Hide any content that goes beyond the circular container */
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    overflow: hidden; 
   }
   .video{
     margin-top: 100px;
     width: 500px;
     height: 250px;
   }
-  .nav-link.nav-button {
-    font-size: 15px !important; /* Adjust the font size as needed */
+  .language{
+    font-size: 13px !important; 
   }
   
   .navbar-link {
@@ -178,18 +201,18 @@ h2 {
     grid-template-rows: auto;
   }
   .navbar-logo-container {
-    width: 70px; /* Set the desired width of the circular container */
-    height: 70px; /* Set the desired height of the circular container */
-    border-radius: 50%; /* Make the container circular */
-    overflow: hidden; /* Hide any content that goes beyond the circular container */
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    overflow: hidden; 
   }
   .video{
     margin-top: 100px;
     width: 300px;
     height: 150px;
   }
-  .nav-link.nav-button {
-    font-size: 10px !important; /* Adjust the font size as needed */
+  .language{
+    font-size: 10px !important; 
   }
   
   .navbar-link {

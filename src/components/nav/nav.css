@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; 
 }
 
 .nav-bar {
@@ -46,7 +46,7 @@ body {
   border-radius: 50%;
 }
 
-/* Media query for screens smaller than 1024px */
+
 @media screen and (max-width: 1024px) {
   .nav-link {
     font-size: 20px;
@@ -55,28 +55,28 @@ body {
     font-size: 20px;
   }
   .nav-bar {
-    flex-direction: column; /* Change flex direction to vertical */
-    padding: 10px; /* Reduce padding for better spacing */
+    flex-direction: column; 
+    padding: 10px; 
     display: flex;
     align-items: center;
     width: 800px;
     margin: 0 auto;
   }
 }
-/* Media query for screens smaller than 600px */
+
 @media screen and (max-width: 600px) {
  
   
   .nav-bar {
-    flex-direction: column; /* Change flex direction to vertical */
-    padding: 10px; /* Reduce padding for better spacing */
+    flex-direction: column; 
+    padding: 10px; 
     display: flex;
     align-items: center;
     width: 400px;
     margin: 0 auto;
   }
   .nav-link.nav-button {
-    font-size: 20px;
+    font-size: 18px !important;
   }
 }
 

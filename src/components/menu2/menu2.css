@@ -1,11 +1,13 @@
 .menu-section {
-    background-color: #FEFFD1; /* Use a Mexican food color for the background */
+    background-color: #FEFFD1; 
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
     margin-right: 20px;
     box-sizing: border-box;
     width: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
   }
   
   .menu-section:last-child {
@@ -13,13 +15,13 @@
   }
   
   .menu-section h2 {
-    color: #FF6347; /* Use a Mexican food color for the h2 text */
+    color: #FF6347; 
     font-size: 24px;
     margin-bottom: 10px;
   }
   
   .menu-section p {
-    color: #333; /* Regular text color */
+    color: #333; 
   }
   
   .menu-item {
@@ -28,12 +30,12 @@
   }
   
   .item-name {
-    color: #333; /* Regular text color */
+    color: #333; 
     font-weight: bold;
   }
   
   .item-price {
-    color: #008000; /* Use a Mexican food color for the item price */
+    color: #008000; 
     margin-left: 10px;
   }
 .menu{
@@ -44,7 +46,7 @@
 
 }  
 .order {
-  padding: 10px 30px; /* Adjust the padding as needed */
+  padding: 10px 30px; 
   background-color: #135d15;
   color: #fff;
   font-size: 16px;
@@ -55,7 +57,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 400px;
-  height: fit-content; /* Set the height to fit the content */
+  height: fit-content; 
 }
 
 .title{

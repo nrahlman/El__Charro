@@ -2,8 +2,8 @@ import React from 'react';
 import './home.css';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/El Charro/logo.jpg';
-import { Container } from 'react-bootstrap';
-import SlideShow from '../slideShow/SlideShow';
+
+
 
 const handleClick = () => {
   window.open('https://food.google.com/chooseprovider?restaurantId=/g/11kb_w05g4&g2lbs=ADZRdksuARnTtKZze_6WSyUB36lYfCyOIN1JaiGcc2y1l2UzFteAXx3Cse_cw3XxFNeaIPmBXFB9K-AyyayhDxzhltcEMv24KFcjUkAr3MJS2GK5nMFPpm0%3D&hl=en-US&gl=us&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=6_2RZJmXB5WnptQPusGy4As&ei=6_2RZJmXB5WnptQPusGy4As&fo_s=OA&sei=Ce8IVCtNKCuPEYsyV-fCBmtp&utm_campaign&utm_source=search', '_blank');
@@ -22,7 +22,7 @@ const Home = ({ language, setLanguage }) => {
           onClick={async () => {
             setLanguage(++language);
           }}
-          className="nav-link nav-button"
+          className="language"
         >
           {isSpanish ? 'Español' : 'English'}
         </button>
@@ -50,16 +50,19 @@ const Home = ({ language, setLanguage }) => {
         {isSpanish ? 'Order Online' : 'Ordena En Linea'}
       </button>
       <div className="content">
-        <div className="left-column">
-          <p className="lorem-text">
-            {isSpanish
-              ? 'El CHARRO MEXICAN FOOD IS A SMALL, FAMILY-OWNED RESTAURANT LOCATED IN LINCOLN SQUARE. WE ARE DELIGHTED TO SERVE OUR COMMUNITY OFFERING DELICIOUS TRADITIONAL MEXICAN FOOD AT AFFORDABLE PRICES.'
-              : 'EL CHARRO COMIDA MEXICANA ES UN PEQUEÑO RESTAURANTE FAMILIAR UBICADO EN LINCOLN SQUARE. ESTAMOS ENCANTADOS DE SERVIR A NUESTRA COMUNIDAD OFRECIENDO DELICIOSA COMIDA TRADICIONAL MEXICANA A PRECIOS ACCESIBLES.'}
-          </p>
-        </div>
+      <div className="center-column">
+  <div className="center-text">
+    <p className="lorem-text">
+      {isSpanish
+        ? 'El CHARRO MEXICAN FOOD IS A SMALL, FAMILY-OWNED RESTAURANT LOCATED IN LINCOLN SQUARE. WE ARE DELIGHTED TO SERVE OUR COMMUNITY OFFERING DELICIOUS TRADITIONAL MEXICAN FOOD AT AFFORDABLE PRICES.'
+        : 'EL CHARRO COMIDA MEXICANA ES UN PEQUEÑO RESTAURANTE FAMILIAR UBICADO EN LINCOLN SQUARE. ESTAMOS ENCANTADOS DE SERVIR A NUESTRA COMUNIDAD OFRECIENDO DELICIOSA COMIDA TRADICIONAL MEXICANA A PRECIOS ACCESIBLES.'}
+    </p>
+  </div>
+</div>
+
         <div className="right-column">
-          <h2>{isSpanish ? 'Order take-out' : 'PEDIDO PARA LLEVAR'}</h2>
-          <h2>773-654-3550</h2>
+          <h2 className='take-out'>{isSpanish ? 'Order take-out' : 'PEDIDO PARA LLEVAR'}</h2>
+          <h2 className='phone'>773-654-3550</h2>
           <Link to="/location" className="button-styling navbar-link">
             {isSpanish ? 'Location and Hours' : 'Ubicación y Horario'}
           </Link>

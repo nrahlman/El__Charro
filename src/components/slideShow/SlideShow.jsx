@@ -1,6 +1,5 @@
 import React from 'react';
 import 'react-slideshow-image/dist/styles.css';
-import './slide.css';
 import { Fade } from 'react-slideshow-image';
 import IMG1 from '../../assets/El Charro/IMG1.jpg';
 import IMG2 from '../../assets/El Charro/IMG2.jpg';
